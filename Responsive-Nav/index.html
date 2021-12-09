@@ -1,0 +1,52 @@
+<!-- Responsive Navigation Bar Practice with html, css, JavaScript -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('#icon').click(function(){
+                $('ul').toggleClass('show')
+            })
+        })
+
+    </script>
+
+</head>
+<body>
+    <nav>
+        <label class="logo">CodeX</label>
+        <ul>
+            <li><a class="active" href="#">Home</a></li>
+            <li><a href=".../">About</a></li>
+            <li><a href="../">Projects</a></li>
+            <li><a href="mailto:sfa.rajo20@gmail.com">Contact</a></li>
+            <li><a href="https://facebook.com/syedfaysel" target="_blank">Join</a></li>
+            
+        </ul>
+        <label id="icon">
+            <i class="fas fa-bars"></i>
+        </label>
+    </nav>
+    <div class="bg"> 
+    </div>
+    <div class="bg2"> 
+    </div>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

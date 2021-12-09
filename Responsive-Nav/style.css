@@ -1,0 +1,124 @@
+/* Responsive Navigation Bar CSS  */
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+    font-family: Montserrat;
+}
+nav{
+    height: 80px;
+    width: 100%;
+    background: #34495e;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+
+}
+label.logo{
+    font-size: 35px;
+    color: #fff;
+    font-weight: bold;
+    padding: 0 50px;
+    line-height: 80px;
+    font-family: 'Marck Script', cursive;
+}
+nav ul{
+    float: right;
+    margin-right: 40px;
+
+}
+nav li{
+    display: inline-block;
+    margin: 0 8px;
+    line-height: 80px;
+
+}
+nav a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    padding: 7px 10px;
+    border-radius: 3px;
+}
+a.active, a:hover{
+    border: 1px solid white;
+    transition: .5s;
+}
+
+nav #icon{
+    color: white;
+    font-size: 25px;
+    line-height: 80px;
+    float:right;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+.bg{
+    /* background: url(https://images.unsplash.com/photo-1638991933262-742d053687e6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat; */
+    background: url(https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1096&q=80) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+.bg2{
+    background: url(https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80) no-repeat;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+
+@media (max-width: 1048px){
+    label.logo{
+        font-size: 33px;
+        padding-left: 50px;
+        
+    }
+    nav ul{
+        margin-right: 20px;
+    }
+    nav a{
+        font-size: 14px;
+
+    }
+}
+@media (max-width:909px){
+    nav #icon{
+        display: block;
+    }
+    nav ul{
+        position: fixed;
+        width:100%;
+        height:100vh;
+        /* background:#2f3640; */
+        background: rgba(47, 54, 64, 0.75);
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav li{
+        display: block;
+        margin: 50px 0;
+        line-height: 20px ;
+    }
+    nav a{
+        font-size: 18px;
+    }
+    a.active, a:hover{
+        border: none;
+        color: #3498db;
+    }
+    nav ul.show{
+        left: 0
+    }
+}
+
+
+
