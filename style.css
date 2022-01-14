@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
 
+.top-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-heading{
+    width: 60%;
+    padding-top: 5%;
+}
+.top-image{
+    width: 30%;
+    padding-top: 5%;
+}
+.top-image img{
+    width: 100%;
+}
+
 
 footer,.container{
     font-family: 'Baloo Da 2',sans-serif;
@@ -32,6 +49,18 @@ footer,.container{
  
 }
 
+/* Hover effects on Panel  */
+.panel{
+    transform: scale(0.9);
+    transition: 0.3s ease-in-out;
+    
+}
+.panel:hover{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+    overflow: hidden;
+}
+
 body::before {
     display: block;
     content: '';
@@ -39,3 +68,23 @@ body::before {
   }
 
   
+  /* Media Query */
+  @media only screen and (max-width:660px){
+      .top-content{
+          flex-direction: column-reverse;
+          align-items: center;
+          justify-content: center;
+      }
+      .top-heading{
+
+          background-color: rgba(97, 88, 88, 0.6);
+          width: 450px;
+          padding-left: 20px;
+          border-radius: 5px;
+          align-items: center;
+          text-align: center;
+      }
+      .top-heading p{
+          color: rgb(252, 253, 174);
+      }
+  }
